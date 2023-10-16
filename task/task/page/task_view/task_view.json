@@ -1,0 +1,26 @@
+{
+ "content": null,
+ "creation": "2023-10-13 12:27:33.830266",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-10-14 16:07:43.171569",
+ "modified_by": "Administrator",
+ "module": "Task",
+ "name": "task-view",
+ "owner": "Administrator",
+ "page_name": "task-view",
+ "roles": [
+  {
+   "role": "Projects User"
+  },
+  {
+   "role": "Projects Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Task View"
+}
