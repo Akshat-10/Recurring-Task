@@ -23,6 +23,10 @@ frappe.pages['task-view'].on_page_load = function(wrapper) {
             header.addClass('task-header');
             header.text(frappe.datetime.str_to_user(date));
 
+
+            // Increase font size for date
+            header.css('font-size', '20px'); // Adjust the font size as needed
+
             fetchTaskData(date, column);
         }
     }
@@ -60,12 +64,20 @@ frappe.pages['task-view'].on_page_load = function(wrapper) {
                 const taskLink = $(`<a href="/app/task/${task.name}">`)
                     .appendTo(taskBox)
                     .append(`<h2>${task.subject} (Task ID: ${taskId})</h2>`);
+
+                // Increase font size for task titles
+                taskLink.find('h2').css('font-size', '18px'); // Adjust the font size as needed
+
                 taskLink.click(function() {
                     frappe.set_route('task', task.name);
                 });
 
-                taskBox.append(`<p>Start Date: ${task.exp_start_date}</p>`);
-                taskBox.append(`<p>End Date: ${task.exp_end_date}</p>`);
+                taskBox.append(`<p style="font-size: 18px;">Start Date: ${task.exp_start_date}</p>`);
+                taskBox.append(`<p style="font-size: 18px;">End Date: ${task.exp_end_date}</p>`);
+
+                // Add a line after each task
+                taskBox.css('border-bottom', '1px solid #ccc'); // Adjust the border style as needed
+
             }
         }
     }
