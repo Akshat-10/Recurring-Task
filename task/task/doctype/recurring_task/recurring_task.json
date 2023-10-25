@@ -70,7 +70,7 @@
    "fieldname": "repeat_on_days",
    "fieldtype": "Table",
    "label": "Repeat on Days",
-   "options": "Repeat on Days"
+   "options": "Auto Repeat Day"
   },
   {
    "allow_on_submit": 1,
